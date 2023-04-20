@@ -22,24 +22,19 @@ function playRound(playerSelection, computerSelection) {
   }
 }
 
-const playerSelection = "rock";
-
 function game() {
-  for (let i = 0; i < 5; i++) {
-    // let playerSelection = prompt(
-    //   "Enter rock paper or scissors to play a game").toLowerCase();
-    const computerSelection = computerChoice();
-    playRound(playerSelection, computerSelection);
-    console.log(playerSelection, computerSelection);
-  }
-  if (playerScore > computerScore) {
-    console.log(playerScore, computerScore);
-    return "you won from the computer";
-  } else if (playerScore === computerScore) {
-    return "You tied!";
-  } else {
-    return "You lost from the computer";
-  }
+  const computerSelection = computerChoice();
+  playRound(playerSelection, computerSelection);
+  console.log(playerSelection, computerSelection);
 }
+if (playerScore > computerScore) {
+  console.log(playerScore, computerScore);
+  return "you won from the computer";
+} else if (playerScore === computerScore) {
+  return "You tied!";
+} else {
+  return "You lost from the computer";
+}
+
 game();
 console.log(game());
