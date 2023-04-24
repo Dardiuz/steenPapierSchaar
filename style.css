@@ -33,3 +33,10 @@ body {
   border-radius: 20%;
   background-color: rgba(38, 119, 31, 0.39);
 }
+
+.results{
+  color: rgb(255, 255, 255);
+  margin-top: 100px;
+  text-align: center;
+
+}
